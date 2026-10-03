@@ -17,14 +17,14 @@ html,body{height:100%;margin:0;background:var(--bg);overflow:hidden;font-family:
 #bot{padding:0 10px calc(env(safe-area-inset-bottom,0px) + 10px)}
 #st{background:var(--panel);border-radius:10px;padding:6px 10px;font-size:12px;margin-bottom:8px;display:flex;justify-content:space-between;gap:8px}
 #st span{color:var(--sub);white-space:nowrap}
-#car{display:flex;align-items:center;gap:4px}
-.nav{pointer-events:auto;flex:0 0 36px;height:56px;border-radius:12px;border:0;background:var(--panel);color:#fff;font-size:28px;line-height:1}
+#car{display:flex;align-items:center;gap:2px}
+.nav{padding:0;pointer-events:auto;flex:0 0 28px;height:56px;border-radius:12px;border:0;background:var(--panel);color:#fff;font-size:28px;line-height:1}
 #track{pointer-events:auto;flex:1;min-width:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;border-radius:16px}
 #track::-webkit-scrollbar{display:none}
 .page{flex:0 0 100%;scroll-snap-align:center;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;box-sizing:border-box}
-.f{pointer-events:auto;min-height:88px;border:2px solid var(--c);background:var(--panel);color:#fff;border-radius:14px;font-size:12px;font-weight:700;line-height:1.2;padding:6px 1px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
-.f i{font-style:normal;font-size:24px}
-@media(max-height:480px){.f{min-height:56px;flex-direction:row;gap:6px}.f i{font-size:20px}#dots{display:none!important}.nav{height:48px}}
+.f{pointer-events:auto;min-height:88px;border:2px solid var(--c);background:var(--panel);color:#fff;border-radius:14px;font-size:min(15px,3.9vw);font-weight:700;line-height:1.2;padding:6px 1px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.f i{font-style:normal;font-size:26px}
+@media(max-height:480px){.f{min-height:58px;flex-direction:row;gap:8px;font-size:17px}.f i{font-size:24px}#dots{display:none!important}.nav{height:48px}}
 .f.on{background:var(--c)}
 #dots{display:flex;justify-content:center;gap:6px;margin-top:8px}
 #dots b{width:8px;height:8px;border-radius:50%;background:#ffffff44}#dots b.a{background:#fff;width:20px;border-radius:4px}
